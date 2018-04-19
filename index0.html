@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="myweb">
+<head>
+<meta charset="utf-8">
+  <title>LOGIN Pokedex</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="style0.css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" href="https://vignette.wikia.nocookie.net/the-pokemon-sun-and-moon/images/4/4c/Pokeball.png/revision/latest?cb=20161123053945" >
+   <link rel="stylesheet" type="text/css" href = "style0.css">
+</head>
+
+<body ng-controller="login">
+  <div class="container">
+  <img src=logo.jpg>
+  <h1> Iniciar sesion </h1>
+  <h1>Pokedex</h1>
+  <form action="login">
+  	<div class="form-input">
+<input type="text" name="usuario" placeholder=" ingrese usuario" ng-model="usuario">
+  	</div>
+  	<div class="form-input">
+  		<input type="password" name="clave" placeholder="ingrese clave" ng-model ="clave">
+  	</div>
+  	<button type="button" ng-click = "validar(usuario, clave)">ingresar</button>
+  </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="script1.js"></script>
+</body>
+</html>
